@@ -5,9 +5,12 @@
 [image1]: ./images/sample_dog_output.png "Sample Output"
 [image2]: ./images/vgg16_model.png "VGG-16 Model Keras Layers"
 [image3]: ./images/vgg16_model_draw.png "VGG16 Model Figure"
+[image4]: ./images/sample_cnn.png "CNN Model Archiecture"
 
 
 ## Project Overview
+
+What’s the breed type of Dog? How can we identify the nature of the Dog? How can we find which breed type of Dog loves ear scratches? Apparently, the notable deep neural networks don’t have all the answers to your questions. Though, it may be answered that permeating question we all ask when meeting a four-legged stranger: How good is that?
 
 Welcome to the Convolutional Neural Networks (CNN) project in the AI Nanodegree! In this project, you will learn how to build a pipeline that can be used within a web or mobile app to process real-world, user-supplied images.  Given an image of a dog, your algorithm will identify an estimate of the canine’s breed.  If supplied an image of a human, the code will identify the resembling dog breed.  
 
@@ -102,17 +105,8 @@ jupyter notebook dog_app.ipynb
 
 12. (Optional) **If you are running the project on your local machine (and not using AWS)**, before running code, change the kernel to match the dog-project environment by using the drop-down menu (**Kernel > Change kernel > dog-project**). Then, follow the instructions in the notebook.
 
-__NOTE:__ While some code has already been implemented to get you started, you will need to implement additional functionality to successfully answer all of the questions included in the notebook. __Unless requested, do not modify code that has already been included.__
+## Model Architecture
+![Sample Output][image4]
 
-## Evaluation
-
-Your project will be reviewed by a Udacity reviewer against the CNN project [rubric](https://review.udacity.com/#!/rubrics/810/view).  Review this rubric thoroughly, and self-evaluate your project before submission.  All criteria found in the rubric must meet specifications for you to pass.
-
-## Project Submission
-
-When you are ready to submit your project, collect the following files and compress them into a single archive for upload:
-- The `dog_app.ipynb` file with fully functional code, all code cells executed and displaying output, and all questions answered.
-- An HTML or PDF export of the project notebook with the name `report.html` or `report.pdf`.
-- Any additional images used for the project that were not supplied to you for the project. __Please do not include the project data sets in the `dogImages/` or `lfw/` folders.  Likewise, please do not include the `bottleneck_features/` folder.__
-
-Alternatively, your submission could consist of the GitHub link to your repository.
+## Conclusion
+we’ve tried to build a CNN to classify the dog breeds. With the help of Keras, it’s easy for us to not only make the CNN model but also test different transfer learning pre-trained models to test our model performance and get better accuracy to classify our objects. In this, blog post we tried CNN from scratch and have to use VGG-16, Resnet50, and Inception transfer learning models to test their accuracy into our test data. And, we also get an accuracy of 80%. We also discussed “how to improve our model performance ”, for further details you have to check my [Medium Article](https://medium.com/swlh/how-to-build-a-dog-breed-classifier-using-cnn-7e147d6551dc)
